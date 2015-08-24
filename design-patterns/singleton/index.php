@@ -19,6 +19,7 @@ class Database extends PDO {
 
     /**
      * A method to get our singleton instance
+     *
      * @return Database|null
      */
     public static function getInstance()
