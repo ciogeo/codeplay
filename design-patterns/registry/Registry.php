@@ -39,7 +39,7 @@ class Registry {
     public static function get($objectName)
     {
         if (self::exists($objectName)) {
-            throw new Exception('Object does not exist in the registry.')
+            throw new Exception('Object does not exist in the registry.');
         }
 
         return self::$_objectsStore[$objectName];
