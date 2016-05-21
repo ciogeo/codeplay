@@ -1,13 +1,14 @@
 <?php
 
 /**
- * Class Calculator
+ * Class Calculator.
  */
-class Calculator {
-
+class Calculator
+{
     /**
      * @param $a
      * @param $b
+     *
      * @return mixed
      */
     public function add($a, $b)
@@ -18,6 +19,7 @@ class Calculator {
     /**
      * @param $a
      * @param $b
+     *
      * @return mixed
      */
     public function subtract($a, $b)

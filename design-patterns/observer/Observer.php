@@ -1,18 +1,19 @@
 <?php
 
 /**
- * Interface Observer
+ * Interface Observer.
  */
-interface Observer {
-
+interface Observer
+{
     /**
      * @param PointOfInterest $pointOfInterest
+     *
      * @return mixed
      */
-    function addPointOfInterest(PointOfInterest $pointOfInterest);
+    public function addPointOfInterest(PointOfInterest $pointOfInterest);
 
     /**
      * @return mixed
      */
-    function getObservers();
+    public function getObservers();
 }

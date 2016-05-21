@@ -1,12 +1,13 @@
 <?php
 
 /**
- * Interface SocialAdapter
+ * Interface SocialAdapter.
  */
-interface SocialAdapter {
-
+interface SocialAdapter
+{
     /**
      * @param $status
+     *
      * @return mixed
      */
     public function send($status);

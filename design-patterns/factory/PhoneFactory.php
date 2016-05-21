@@ -1,13 +1,14 @@
 <?php
 
 /**
- * Class PhoneFactory
+ * Class PhoneFactory.
  */
 class PhoneFactory
 {
     /**
      * @param $maker
      * @param $model
+     *
      * @return Phone
      */
     public static function create($maker, $model)

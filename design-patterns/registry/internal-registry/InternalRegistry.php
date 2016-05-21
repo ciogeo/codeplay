@@ -3,12 +3,13 @@
 include_once '../Registry.php';
 
 /**
- * Class DBConnection
+ * Class DBConnection.
  */
-abstract class DBConnection extends PDO {
-
+abstract class DBConnection extends PDO
+{
     /**
      * @param null $objectName
+     *
      * @return mixed
      */
     public static function getInstance($objectName = null)
@@ -27,10 +28,10 @@ abstract class DBConnection extends PDO {
 }
 
 /**
- * Class DBMainConnection
+ * Class DBMainConnection.
  */
-class DBMainConnection extends DBConnection {
-
+class DBMainConnection extends DBConnection
+{
     public function __construct()
     {
         parent::__construct(MAIN_DB_DSN, MAIN_DB_USER, MAIN_DB_PASSWORD);
@@ -38,10 +39,10 @@ class DBMainConnection extends DBConnection {
 }
 
 /**
- * Class DBSecondConnection
+ * Class DBSecondConnection.
  */
-class DBSecondConnection extends DBConnection {
-
+class DBSecondConnection extends DBConnection
+{
     public function __construct()
     {
         parent::__construct(SECOND_DB_DSN, SECOND_DB_USER, SECOND_DB_PASSWORD);

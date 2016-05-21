@@ -1,7 +1,7 @@
 <?php
 
 spl_autoload_register(function ($class) {
-    include_once $class . '.php';
+    include_once $class.'.php';
 });
 
 $simulator = new Simulator();
@@ -18,4 +18,3 @@ $simulator->getObservers();
 $simulator->addPointOfInterest($poi3);
 
 $simulator->getObservers();
-

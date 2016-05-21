@@ -1,12 +1,13 @@
 <?php
 
 /**
- * Class Twitter
+ * Class Twitter.
  */
-class Twitter {
-
+class Twitter
+{
     /**
-     * Post status to Twitter
+     * Post status to Twitter.
+     *
      * @param $status
      */
     public function tweet($status)
