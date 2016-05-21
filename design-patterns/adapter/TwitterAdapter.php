@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class TwitterAdapter
+ * Class TwitterAdapter.
  */
-class TwitterAdapter implements SocialAdapter {
-
+class TwitterAdapter implements SocialAdapter
+{
     private $twitter;
 
     /**
      * @param Twitter $twitter
      */
-    function __construct(Twitter $twitter)
+    public function __construct(Twitter $twitter)
     {
         $this->twitter = $twitter;
     }

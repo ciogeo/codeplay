@@ -1,7 +1,7 @@
 <?php
 
 spl_autoload_register(function ($class) {
-    include_once $class . '.php';
+    include_once $class.'.php';
 });
 
 $twitter = new TwitterAdapter(new Twitter());

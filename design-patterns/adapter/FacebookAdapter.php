@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class FacebookAdapter
+ * Class FacebookAdapter.
  */
-class FacebookAdapter implements SocialAdapter {
-
+class FacebookAdapter implements SocialAdapter
+{
     private $facebook;
 
     /**
      * @param Facebook $facebook
      */
-    function __construct(Facebook $facebook)
+    public function __construct(Facebook $facebook)
     {
         $this->facebook = $facebook;
     }

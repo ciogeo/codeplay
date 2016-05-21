@@ -1,12 +1,13 @@
 <?php
 
 /**
- * Class Facebook
+ * Class Facebook.
  */
-class Facebook {
-
+class Facebook
+{
     /**
-     * Post status to Facebook
+     * Post status to Facebook.
+     *
      * @param $status
      */
     public function updateStatus($status)

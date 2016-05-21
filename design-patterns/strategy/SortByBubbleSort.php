@@ -1,12 +1,13 @@
 <?php
 
 /**
- * Class SortByBubbleSort
+ * Class SortByBubbleSort.
  */
-class SortByBubbleSort implements SortStrategy {
-
+class SortByBubbleSort implements SortStrategy
+{
     /**
      * @param $array
+     *
      * @return mixed
      */
     public function sort($array)
@@ -28,4 +29,3 @@ class SortByBubbleSort implements SortStrategy {
         return $array;
     }
 }
-
