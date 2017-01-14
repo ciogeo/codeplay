@@ -1,14 +1,15 @@
 <?php
 
 /**
- * Class Simulator
+ * Class Simulator.
  */
-class Simulator implements Observer {
-
+class Simulator implements Observer
+{
     private $observers;
 
-    public function __construct() {
-        $this->observers = array();
+    public function __construct()
+    {
+        $this->observers = [];
     }
 
     /**
@@ -20,13 +21,12 @@ class Simulator implements Observer {
     }
 
     /**
-     * Echo Points Of Interest
+     * Echo Points Of Interest.
      */
     public function getObservers()
     {
-        foreach ($this->observers as $observer)
-        {
-            echo $observer->get() . '<br />';
+        foreach ($this->observers as $observer) {
+            echo $observer->get().'<br />';
         }
     }
 }

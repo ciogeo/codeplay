@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Interface PointOfInterest
+ * Interface PointOfInterest.
  */
-interface PointOfInterest {
-
+interface PointOfInterest
+{
     /**
      * @return mixed
      */

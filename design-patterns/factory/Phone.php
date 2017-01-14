@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class Phone
+ * Class Phone.
  */
 class Phone
 {
@@ -23,6 +23,6 @@ class Phone
      */
     public function getPhone()
     {
-        return $this->maker . ' ' . $this->model;
+        return $this->maker.' '.$this->model;
     }
 }

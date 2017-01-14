@@ -1,11 +1,13 @@
 <?php
 
 /**
- * Interface SortStrategy
+ * Interface SortStrategy.
  */
-interface SortStrategy {
+interface SortStrategy
+{
     /**
      * @param $array
+     *
      * @return mixed
      */
     public function sort($array);

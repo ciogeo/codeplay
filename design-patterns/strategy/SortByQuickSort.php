@@ -1,12 +1,13 @@
 <?php
 
 /**
- * Class SortByQuickSort
+ * Class SortByQuickSort.
  */
-class SortByQuickSort implements SortStrategy {
-
+class SortByQuickSort implements SortStrategy
+{
     /**
      * @param $array
+     *
      * @return array
      */
     public function sort($array)
@@ -15,7 +16,7 @@ class SortByQuickSort implements SortStrategy {
             return $array;
         }
 
-        $left = $right = array();
+        $left = $right = [];
 
         reset($array);
 
@@ -30,6 +31,6 @@ class SortByQuickSort implements SortStrategy {
             }
         }
 
-        return array_merge($this->sort($left), array($pivot_key => $pivot), $this->sort($right));
+        return array_merge($this->sort($left), [$pivot_key => $pivot], $this->sort($right));
     }
 }

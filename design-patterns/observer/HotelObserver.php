@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class HotelObserver
+ * Class HotelObserver.
  */
-class HotelObserver implements PointOfInterest {
-
+class HotelObserver implements PointOfInterest
+{
     private $name;
 
     /**
      * @param $name
      */
-    function __construct($name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
@@ -20,6 +20,6 @@ class HotelObserver implements PointOfInterest {
      */
     public function get()
     {
-        return 'Hotel ' . $this->name . ' added.';
+        return 'Hotel '.$this->name.' added.';
     }
 }

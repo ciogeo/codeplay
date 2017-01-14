@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class Sort
+ * Class Sort.
  */
-class Sort {
-
+class Sort
+{
     private $array;
 
     /**
      * @param $array
      */
-    function __construct($array)
+    public function __construct($array)
     {
         $this->array = $array;
     }
@@ -20,8 +20,7 @@ class Sort {
      */
     public function sort()
     {
-        if(count($this->array) < 5)
-        {
+        if (count($this->array) < 5) {
             $sort = new SortByBubbleSort();
         } else {
             $sort = new SortByQuickSort();

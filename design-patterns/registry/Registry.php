@@ -1,18 +1,19 @@
 <?php
 
 /**
- * Class Registry
+ * Class Registry.
  */
-class Registry {
-
-    static private $_objectsStore = array();
+class Registry
+{
+    private static $_objectsStore = [];
 
     /**
      * Add an object to the registry
-     * If overwriting an object, the previous object will be returned
+     * If overwriting an object, the previous object will be returned.
      *
      * @param $object
      * @param $objectName
+     *
      * @return mixed
      */
     public static function add($object, $objectName = null)
@@ -30,11 +31,13 @@ class Registry {
     }
 
     /**
-     * Get an object from the registry
+     * Get an object from the registry.
      *
      * @param $objectName
-     * @return mixed
+     *
      * @throws Exception
+     *
+     * @return mixed
      */
     public static function get($objectName)
     {
@@ -46,9 +49,10 @@ class Registry {
     }
 
     /**
-     * Check if an object exists in the registry
+     * Check if an object exists in the registry.
      *
      * @param $objectName
+     *
      * @return bool
      */
     public static function exists($objectName)
@@ -61,7 +65,7 @@ class Registry {
     }
 
     /**
-     * Remove an object from the registry
+     * Remove an object from the registry.
      *
      * @param $objectName
      */
